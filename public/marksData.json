@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "name": "Arafat",
+      "marks": {
+        "Math": 85,
+        "English": 78,
+        "Science": 92
+      }
+    },
+    {
+      "id": 2,
+      "name": "Nusrat",
+      "marks": {
+        "Math": 90,
+        "English": 88,
+        "Science": 95
+      }
+    },
+    {
+      "id": 3,
+      "name": "Rakib",
+      "marks": {
+        "Math": 70,
+        "English": 65,
+        "Science": 72
+      }
+    },
+    {
+      "id": 4,
+      "name": "Sumaiya",
+      "marks": {
+        "Math": 95,
+        "English": 92,
+        "Science": 89
+      }
+    },
+    {
+      "id": 5,
+      "name": "Tanvir",
+      "marks": {
+        "Math": 60,
+        "English": 58,
+        "Science": 63
+      }
+    },
+    {
+      "id": 6,
+      "name": "Meherun",
+      "marks": {
+        "Math": 88,
+        "English": 80,
+        "Science": 85
+      }
+    },
+    {
+      "id": 7,
+      "name": "Shuvo",
+      "marks": {
+        "Math": 75,
+        "English": 70,
+        "Science": 78
+      }
+    },
+    {
+      "id": 8,
+      "name": "Mim",
+      "marks": {
+        "Math": 98,
+        "English": 95,
+        "Science": 99
+      }
+    },
+    {
+      "id": 9,
+      "name": "Hasib",
+      "marks": {
+        "Math": 82,
+        "English": 76,
+        "Science": 80
+      }
+    },
+    {
+      "id": 10,
+      "name": "Rima",
+      "marks": {
+        "Math": 89,
+        "English": 85,
+        "Science": 90
+      }
+    }
+  ]
+  
