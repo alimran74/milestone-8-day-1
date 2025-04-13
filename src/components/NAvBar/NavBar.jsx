@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from './Link';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
     { id: 1, name: "Home", path: "/" },
@@ -11,23 +12,33 @@ const navLinks = [
 
 
 const NavBar = () => {
+    const [open, setOpen] = useState(false);
+    const links = navLinks.map(route => <Link key={route.id} route={route}></Link>)
     return (
-        <nav>
-
-
-            <ul className='flex' >
+        <nav className='flex justify-between mx-10 mt-6'>
+           <span className='flex' onClick={() => setOpen(!open)}>
+            {
+            open ? 
+            <X className='md:hidden'></X> : 
+            <Menu className='md:hidden'></Menu>
+            }
+           
+            <ul className={`md:hidden absolute duration-500 text-black 
+                ${open ? 'top-8' : '-top-40'} 
+                bg-amber-400`}>
+                {links}
+            </ul>
+                <h3 className='ml-4'>My navbar</h3>
+           </span>
+           
+            <ul className='md:flex hidden'>
                 {
-                    navLinks.map(route => <Link key={route.id} route={route}></Link>)
+                   links 
                 }
             </ul>
 
-            {/* <ul className='flex'>
-{
-    navLinks.map(route =><li className='mr-10'>
-        <a href={route.path}>
-            </a>{route.name}</li>)
-}
-</ul> */}
+   
+
 
             {/* <ul className='flex '>
                 <li className='mr-10'><a href=""></a>Home</li>
@@ -35,6 +46,7 @@ const NavBar = () => {
                 <li className='mr-10'><a href=""></a>Blog</li>
                
             </ul> */}
+            <button>Sign In</button>
         </nav>
     );
 };
